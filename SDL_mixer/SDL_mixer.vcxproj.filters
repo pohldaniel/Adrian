@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\dynamic_flac.c" />
+    <ClCompile Include="src\dynamic_fluidsynth.c" />
+    <ClCompile Include="src\dynamic_mod.c" />
+    <ClCompile Include="src\dynamic_mp3.c" />
+    <ClCompile Include="src\dynamic_ogg.c" />
+    <ClCompile Include="src\effect_position.c" />
+    <ClCompile Include="src\effect_stereoreverse.c" />
+    <ClCompile Include="src\effects_internal.c" />
+    <ClCompile Include="src\fluidsynth.c" />
+    <ClCompile Include="src\load_aiff.c" />
+    <ClCompile Include="src\load_flac.c" />
+    <ClCompile Include="src\load_ogg.c" />
+    <ClCompile Include="src\load_voc.c" />
+    <ClCompile Include="src\mixer.c" />
+    <ClCompile Include="src\music.c" />
+    <ClCompile Include="src\music_cmd.c" />
+    <ClCompile Include="src\music_flac.c" />
+    <ClCompile Include="src\music_mad.c" />
+    <ClCompile Include="src\music_mod.c" />
+    <ClCompile Include="src\music_ogg.c" />
+    <ClCompile Include="src\playwave.c" />
+    <ClCompile Include="src\wavestream.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dynamic_flac.h" />
+    <ClInclude Include="src\dynamic_fluidsynth.h" />
+    <ClInclude Include="src\dynamic_mod.h" />
+    <ClInclude Include="src\dynamic_mp3.h" />
+    <ClInclude Include="src\dynamic_ogg.h" />
+    <ClInclude Include="src\effects_internal.h" />
+    <ClInclude Include="src\fluidsynth.h" />
+    <ClInclude Include="src\load_aiff.h" />
+    <ClInclude Include="src\load_flac.h" />
+    <ClInclude Include="src\load_ogg.h" />
+    <ClInclude Include="src\load_voc.h" />
+    <ClInclude Include="src\music_cmd.h" />
+    <ClInclude Include="src\music_flac.h" />
+    <ClInclude Include="src\music_mad.h" />
+    <ClInclude Include="src\music_mod.h" />
+    <ClInclude Include="src\music_ogg.h" />
+    <ClInclude Include="src\wavestream.h" />
+  </ItemGroup>
+</Project>

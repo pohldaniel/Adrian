@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Building.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="Guard.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Md2.cpp" />
+    <ClCompile Include="Menu\menu.cpp" />
+    <ClCompile Include="Menu\menuitem.cpp" />
+    <ClCompile Include="Menu\menupage.cpp" />
+    <ClCompile Include="MiniMap.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="platform.cpp" />
+    <ClCompile Include="PPShaderProgram.cpp" />
+    <ClCompile Include="RenderPass.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
+    <ClCompile Include="SMShaderProgram.cpp" />
+    <ClCompile Include="SoundSystem.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="TextObject.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="TTFFont.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Building.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="Guard.h" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Md2.h" />
+    <ClInclude Include="Menu\menu.h" />
+    <ClInclude Include="Menu\menudefines.h" />
+    <ClInclude Include="Menu\menuitem.h" />
+    <ClInclude Include="Menu\menupage.h" />
+    <ClInclude Include="MiniMap.h" />
+    <ClInclude Include="Panel.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="PPShaderProgram.h" />
+    <ClInclude Include="RenderPass.h" />
+    <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="SMShaderProgram.h" />
+    <ClInclude Include="SoundSystem.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="TextObject.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="TTFFont.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="adrian.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{75f911ba-650e-4cd0-8b95-4ab0f95391dd}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Adrian</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;GLEW_STATIC;_CRT_SECURE_NO_DEPRECATE;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SDL\include;..\SDL_image\include;..\SDL_mixer\include;..\SDL_ttf\include;..\libglew;..\libzlib\include;..\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GLU32.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libfreetype.lib;libglew.lib;libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SDL\include;..\SDL_image\include;..\SDL_mixer\include;..\SDL_ttf\include;..\libglew;..\libzlib\include;..\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GLU32.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libfreetype.lib;libglew.lib;libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SDL\include;..\SDL_image\include;..\SDL_mixer\include;..\SDL_ttf\include;..\libglew;..\libzlib\include;..\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libd\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GLU32.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libfreetype.lib;libglew.lib;libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;GLEW_STATIC;_CRT_SECURE_NO_DEPRECATE;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\SDL\include;..\SDL_image\include;..\SDL_mixer\include;..\SDL_ttf\include;..\libglew;..\libzlib\include;..\libxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL32.lib;GLU32.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libfreetype.lib;libglew.lib;libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
